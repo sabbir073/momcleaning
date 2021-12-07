@@ -562,7 +562,7 @@ window._load_script = function(url, callback) {
              data: JSON.stringify(formData),
              success: function(dataResponse){
                var contactData = {
-                       "securityToken": (timeStamp-dateStamp)/(DateToken/6155234),
+                       "securityToken": sectoken,
                        "method": "3",
                        "clientID": dataResponse.Client.objectID,
                        "Fields": [
